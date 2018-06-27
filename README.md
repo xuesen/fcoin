@@ -13,7 +13,7 @@ FT地址：0x96e6512d866ecf64f40be499a9cfacaf2c6000b0
 
 作者：一条小猪佩奇
 
-开源倡导者，要源码可以私聊我
+开源倡导者，源码地址：https://github.com/xuesen/Fcoin-FT
 
 
 
