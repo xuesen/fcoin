@@ -1,0 +1,135 @@
+写完的函数
+#得到USDT中的余额
+def Getusdt():
+#表示最新成交, 最新交易.得到最新交易单的价格
+def get_trades():
+#测试买入并返回订单号,tick_price默认价格为实时交易价格，可以自己定价
+def testbuy(tick_price = get_trades()):
+#程序停止时间设置
+def sleep(a):
+#测试卖出并返回订单号,tick_price默认价格为实时交易价格，可以自己定价
+def testsell(tick_price = get_trades()):
+
+
+#       测试
+#time.sleep(5)
+#print(fcoin.buy('fteth', 0.0001, 10))
+#print(fcoin.sell('fteth', 0.002, 5))
+#print(fcoin.cancel_order(r['data']))
+#print(fcoin.get_candle('M1','fteth'))
+#订单数据提取，r['status'], r['data']     #{'status': 0, 'data': 'YUs9fDZjq9L1BYYRmz0cnDM-3npwm_r_CbD9xJNqd5U='}
+
+#r = fcoin.buy('btcusdt' , 6000 ,0.0153)
+#print(r)
+'''
+print("查询服务器时间")
+print(fcoin.get_server_time())
+
+print("可用交易对")
+print(fcoin.get_symbols())
+
+print("可用币种")
+print(fcoin.get_currencies())
+
+print("账户资产")
+print(fcoin.get_balance())
+print("行情 tick 信息, 包含最新成交价, 最新成交量, 买一卖一, 近 24 小时成交量.")
+print(fcoin.get_market_ticker('btcusdt') )
+print("表示行情深度, 买卖盘, 盘口.")
+print(fcoin.get_market_depth('L20','btcusdt'))
+print("表示最新成交, 最新交易.")
+print(fcoin.get_trades('btcusdt'))
+'''
+
+fcoin.get_balance()
+账户资产
+{
+        'status': 0,
+        'data':
+            [
+                {'currency': 'zil', 'available': '0.081468175668257799', 'frozen': '0.000000000000000000', 'balance': '0.081468175668257799'},
+                {'currency': 'omg', 'available': '0.000956625121551203', 'frozen': '0.000000000000000000', 'balance': '0.000956625121551203'},
+                {'currency': 'btc', 'available': '0.000222321644379737', 'frozen': '0.000000000000000000', 'balance': '0.000222321644379737'},
+                {'currency': 'icx', 'available': '0.006782606149856747', 'frozen': '0.000000000000000000', 'balance': '0.006782606149856747'},
+                {'currency': 'eth', 'available': '0.000188319094076107', 'frozen': '0.000000000000000000', 'balance': '0.000188319094076107'},
+                {'currency': 'btm', 'available': '0.007616585252351644', 'frozen': '0.000000000000000000', 'balance': '0.007616585252351644'},
+                {'currency': 'bch', 'available': '0.000042342995743095', 'frozen': '0.000000000000000000', 'balance': '0.000042342995743095'},
+                {'currency': 'ltc', 'available': '0.000193920741368595', 'frozen': '0.000000000000000000', 'balance': '0.000193920741368595'},
+                {'currency': 'usdt', 'available': '106.186252282769890981', 'frozen': '0.000000000000000000', 'balance': '106.186252282769890981'},
+                {'currency': 'ft', 'available': '418.707669169796506383', 'frozen': '0.000000000000000000', 'balance': '418.707669169796506383'},
+                {'currency': 'zip', 'available': '0.110177617399831867', 'frozen': '0.000000000000000000', 'balance': '0.110177617399831867'},
+                {'currency': 'etc', 'available': '0.002327719969497988', 'frozen': '0.000000000000000000', 'balance': '0.002327719969497988'}
+            ]
+}
+
+
+{
+    'status': 0,
+    'data':
+    [{'currency': 'zil', 'available': '6.447710447915697052', 'frozen': '0.000000000000000000', 'balance': '6.447710447915697052' },
+    {'currency': 'omg', 'available': '0.006841928893519719', 'frozen': '0.000000000000000000', 'balance': '0.006841928893519719'},
+    { 'currency': 'btc', 'available': '0.001256677643438853', 'frozen': '0.000000000000000000', 'balance': '0.001256677643438853'},
+    {'currency': 'icx', 'available': '0.164648772588161486', 'frozen': '0.000000000000000000', 'balance': '0.164648772588161486'},
+    {'currency': 'eth', 'available': '0.000000001822788027', 'frozen': '0.000000000000000000', 'balance': '0.000000001822788027'},
+    {'currency': 'btm', 'available': '0.779534567383725179', 'frozen': '0.000000000000000000', 'balance': '0.779534567383725179'},
+     {'currency': 'bch', 'available': '0.001615541368978935', 'frozen': '0.000000000000000000', 'balance': '0.001615541368978935'},
+      {'currency': 'ae', 'available': '0.000580022861747944', 'frozen': '0.000000000000000000', 'balance': '0.000580022861747944'}, {'currency': 'ltc', 'available': '0.016963942866260192', 'frozen': '0.000000000000000000', 'balance': '0.016963942866260192'}, {'currency': 'zrx', 'available': '0.002349415108391625', 'frozen': '0.000000000000000000', 'balance': '0.002349415108391625'}, {'currency': 'xrp', 'available': '0.000000000000000000', 'frozen': '0.000000000000000000', 'balance': '0.000000000000000000'},
+       {'currency': 'usdt', 'available': '131.360151323691427621', 'frozen': '0.000000000000000000', 'balance': '131.360151323691427621'}, {'currency': 'bnb', 'available': '0.000001077068549113', 'frozen': '0.000000000000000000', 'balance': '0.000001077068549113'},
+      {'currency': 'ft', 'available': '777.525762520870414676', 'frozen': '0.000000000000000000', 'balance': '777.525762520870414676'}, {'currency': 'gtc', 'available': '0.000000000000000000', 'frozen': '0.000000000000000000', 'balance': '0.000000000000000000'},
+       {'currency': 'zip', 'available': '17623.826587610387217971', 'frozen': '0.000000000000000000', 'balance': '17623.826587610387217971'}, {'currency': 'etc', 'available': '0.075320104612783125', 'frozen': '0.000000000000000000', 'balance': '0.075320104612783125'}]})
+
+
+fcoin.order_result
+查询成交订单号的返回数据
+{
+        'status': 0,
+        'data': [
+                {
+                    'type': 'buy_limit',
+                    'side': None,
+                    'price': '0.686000000000000000',
+                    'filled_amount': '72.890000000000000000',
+                    'fill_fees': '0.072890000000000000',
+                    'created_at': 1529495079143,
+                    'source': 'api'
+                }]
+}
+
+ fcoin.get_order(self,order_id)没有order_id则查询订单列表和有order_id获取指定订单
+{
+        'status': 0,
+        'data':
+            {
+                'id': 'qkxPRgJw1o-HFwvXv4gQX2miPn1SL36VXXPQMdHPNNE=',
+                'symbol': 'ftusdt',
+                'amount': '72.890000000000000000',
+                'price': '0.686000000000000000',
+                'created_at': 1529495074634,
+                'type': 'limit',
+                'side': 'buy',
+                'filled_amount': '72.890000000000000000',
+                'executed_value': '50.002540000000000000',
+                'fill_fees': '0.072890000000000000',
+                'source': 'api',
+                'state': 'filled'
+             }
+}
+submitted	已提交
+partial_filled	部分成交
+partial_canceled	部分成交已撤销
+filled	完全成交
+canceled	已撤销
+pending_cancel	撤销已提交
+
+
+
+
+
+
+
+
+
+
+
+
+
