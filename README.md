@@ -1,4 +1,5 @@
-
+Key：FCOIN交易平台上你自己申请的API的key值
+secret：API的secret值
 mount USDT单次交易数量
 symbol 交易对，仅提供与usdt的交易对
 order_sleep为订单交易等待时间
