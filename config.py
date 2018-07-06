@@ -38,6 +38,6 @@ if trans == 'btm':
 
 order_sleep = int(conf.get("section","order_sleep"))    #订单处理等待时间s
 
-
+trading_strategy = int(conf.get("section","trading_Strategy"))
 
 

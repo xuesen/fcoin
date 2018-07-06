@@ -62,7 +62,7 @@ class Fcoin():
             'FC-ACCESS-TIMESTAMP': timestamp
 
         }
-
+        
         try:
             r = requests.request(method, full_url, headers = headers, json=payload)
             r.raise_for_status()
