@@ -18,9 +18,9 @@ FT地址：0x96e6512d866ecf64f40be499a9cfacaf2c6000b0
 
 后续会慢慢做量化交易，希望能从小白的道路上走向财务自由
 
-作者：一条小猪佩奇
+作者：煎饼果子+小矿工
 
-开源倡导者，源码地址https://github.com/xuesen/Fcoin-FT
+开源倡导者
 
 2018-07-07更新
 trading_Strategy = 1 交易策略为两种
