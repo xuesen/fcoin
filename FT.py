@@ -104,7 +104,8 @@ def orderjust(order_id):
                 flag+=1
                 if flag == 10:
                     return False
-            else:
+            else:    #刷单流程
+
                 log.logger.info(s)
                 log.logger.info("+订单正在等待撮合...")
                 sleep(1)
@@ -113,6 +114,7 @@ def orderjust(order_id):
                     return False
         except KeyError:
             pass
+
 
 # 精度控制，直接抹除多余位数，非四舍五入
 def digits(num, digit):
@@ -149,9 +151,11 @@ def Getusdt():
 flag = 0#标记
 while True:
         # USDT数量是否充足
-        if config.mount > Getusdt():
-            log.logger.warning("USDT数量不足")
-
+        try:
+            if config.mount > Getusdt():
+                log.logger.warning("USDT数量不足")
+        except:
+            pass
         # 买入
         if flag == 1:
             print("重新卖出")
