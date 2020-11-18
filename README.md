@@ -1,3 +1,4 @@
+-------------------------------------------------------------------------------
 Key：FCOIN交易平台上你自己申请的API的key值
 
 secret：API的secret值
@@ -9,8 +10,6 @@ symbol 交易对，仅提供与usdt的交易对,例如：symbol=ft，就是ftusd
 order_sleep为订单交易等待时间
 
 trading_Strategy 交易策略
-
-代码有问题可以加微信说，互相交朋友：jianbingguozi1995
 
 FT地址：0x96e6512d866ecf64f40be499a9cfacaf2c6000b0
 
